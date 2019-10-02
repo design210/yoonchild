@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>서울시 보도지원시스템</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+    <script src="../js/jquery.popupoverlay.js"></script>
+    <script src="../js/jquery.twbsPagination.min.js"></script>
+
+    <link href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- 상단 UI 영역 시작 -->
+<form id="" name="" action=""  onsubmit="return false">
+    <section class="ui-wrap">
+        <div class="ui-container">
+            <!-- 모바일 햄버거 메뉴 시작 -->
+            <div class="trigger_wrap mo-only">
+                <a class="menu-trigger" href="#">
+                    <span> </span>
+                    <span> </span>
+                    <span> </span>
+                </a>
+            </div>
+            <!-- 모바일 햄버거 메뉴 끝 -->
+            <!-- bi 시작 -->
+            <div class="bi"><img src="../images/logo.png" alt="서울시보도지원시스템"/></div>
+            <!-- bi 끝 -->
+            <!-- 모바일 통합 검색 버튼 시작 -->
+            <div class="mo-only search-open active-init"><img src="../images/icon-search.png" alt="검색창 열기"/>닫기</div>
+            <!-- 모바일 통합 검색 버튼  끝 -->
+            <div class="menu-common">
+                <!-- 모바일 메뉴 닫기 버튼 시작 -->
+                <div class="nav-close mo-only"></div>
+                <!-- 모바일 메뉴 닫기 버튼 끝 -->
+                <nav>
+                    <div>
+                        <div class="mo-only home">홈</div>
+                        <div class="down-has active-init">보도지원</div>
+                        <div class="depths2">
+                            <div class="active-init">
+                                <ul>
+                                    <li>보도자료</li>
+                                    <li>기자설명회</li>
+                                    <li>시장동정</li>
+                                    <li>해명자료</li>
+                                    <li>설명자료</li>
+                                    <li>사진자료</li>
+                                    <li>영상자료</li>
+                                    <li>보도참고자료</li>
+                                    <li>자치구보도자료</li>
+                                </ul>
+                                <ul class="pc-only">
+                                    <li class="calendar"><button class="btn-calendar">보도계획안내</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mo-only press-calendar">보도계획안내</div>
+                    <div class="down-none">공지사항</div>
+                </nav>
+                <article>
+                    <div class="pc-only">
+                        <div class="total-search">
+                            <div><input type="text" placeholder="통합검색"/></div>
+                            <div class="btn-search-main"><button></button></div>
+                        </div>
+                    </div>
+                    <div class="name"><span>출입기자</span> <span class="pc-only">|</span> 홍길동<span class="mo-only arrow"><img src="./images/name-arrow.png" alt=""/></span></div>
+                    <div class="btn-logout"><button>로그아웃</button></div>
+                </article>
+            </div>
+        </div>
+        <!-- 모바일용 통합 검색 시작 -->
+        <article class="mo-only">
+            <div class="total-search-wrap">
+                <div class="total-search">
+                    <div class="input"><input type="text" placeholder="통합검색"/></div>
+                    <div class="btn-search-main"><button></button></div>
+                </div>
+            </div>
+        </article>
+        <!-- 모바일용 통합 검색 끝 -->
+        <!-- 보도지원 모바일 메뉴 시작 -->
+        <article class="mo-press-menu mo-only">
+            <div class="title"><h1 class="active-init">보도참고자료</h1></div>
+            <div class="sub-menu">
+                <ul>
+                    <li>보도자료</li>
+                    <li>기자설명회</li>
+                    <li>시장동정</li>
+                    <li>해명자료</li>
+                    <li>설명자료</li>
+                    <li>사진자료</li>
+                    <li>영상자료</li>
+                    <li>자치구보도자료</li>
+                    <li>보도계획안내</li>
+                </ul>
+            </div>
+        </article>
+        <!-- 보도지원 모바일 메뉴 끝 -->
+    </section>
+</form>
+<!-- 상단 UI 영역 끝 -->
+<!-- PC 간격 조정용 -->
+<div class="pc-only"><div class="depths2-space"></div></div>
+<!-- 컨텐츠 영역 시작 -->
+<section class="sub-container">
+    <!-- 뉴스 리스트 영역 시작 -->
+    <section class="has-side">
+        <article class="press-wrap">
+            <div class="title">
+                <div>
+                    <span class="history">보도지원</span>
+                    <span>보도참고자료</span>
+                </div>
+                <div class="mo-only"><button class="btn-mo-search active-init">조건검색</button></div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div class="title">
+                            <div class="subject-wrap">
+                                <div class="star"></div>
+                                <div class="subject"><a href="javascript:void(0)">서울시, ''다둥이가족 모여라''…25일 미세먼지 다둥이 마라톤 개최</a></div>
+                                <div class="new">N</div>
+                            </div>
+                            <div class="btn"><button class="btn-file file_open">첨부파일<span>2</span></button></div>
+                        </div>
+                        <div class="contents">어린이대공원서 열려…두 자녀 이상 마라톤 참가 500팀, 일반다둥이 가정 1000팀 초대 - 300m 코스를 도는 미세먼지 ‘다둥이마라톤’은 3세~7세 형제·자매·남매 참가 즐길 거리 풍성  ※자세한 사항은 붙임문서를 참고하세요.</div>
+                        <div class="write-date">가족담당관 ㅣ <span>2019.01.01</span></div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <div class="subject-wrap">
+                                <div class="box-blue">보도유예</div>
+                                <div class="subject"><a href="javascript:void(0)">서울시, ''다둥이가족 모여라''…25일 미세먼지 다둥이 마라톤 개최</a></div>
+                                <div class="new">N</div>
+                            </div>
+                            <div class="btn"><button class="btn-file file_open">첨부파일<span>2</span></button></div>
+                        </div>
+                        <div class="contents">어린이대공원서 열려…두 자녀 이상 마라톤 참가 500팀, 일반다둥이 가정 1000팀 초대 - 300m 코스를 도는 미세먼지 ‘다둥이마라톤’은 3세~7세 형제·자매·남매 참가 즐길 거리 풍성  ※자세한 사항은 붙임문서를 참고하세요.</div>
+                        <div class="write-date">가족담당관 ㅣ <span>2019.01.01</span></div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <div class="subject-wrap">
+                                <div class="subject"><a href="javascript:void(0)">서울시, ''다둥이가족 모여라''…25일 미세먼지 다둥이 마라톤 개최</a></div>
+                                <div class="new">N</div>
+                            </div>
+                            <div class="btn"><button class="btn-file file_open">첨부파일<span>2</span></button></div>
+                        </div>
+                        <div class="contents">어린이대공원서 열려…두 자녀 이상 마라톤 참가 500팀, 일반다둥이 가정 1000팀 초대 - 300m 코스를 도는 미세먼지 ‘다둥이마라톤’은 3세~7세 형제·자매·남매 참가 즐길 거리 풍성  ※자세한 사항은 붙임문서를 참고하세요.</div>
+                        <div class="write-date">가족담당관 ㅣ <span>2019.01.01</span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt20"><button class="btn-more-open">더보기</button></div>
+        </article>
+        <!-- 뉴스 리스트 영역 끝 -->
+        <!-- 사이드 영역 시작 -->
+        <aside class="press-aside">
+            <!-- 조건검색 시작 -->
+            <form id="" name="" action=""  onsubmit="return false">
+            <article class="aside-search">
+                <div class="title pc-only"><h1>조건검색</h1></div>
+                <section class="search-box-gray mt20">
+                    <article class="pull-down aside column2">
+                        <ul class="menu">
+                            <li>
+                                <input id="search" type="checkbox"/>
+                                <label for="search">전체</label>
+                                <div class="active-init auto-close">
+                                    <ul class="submenu search-range">
+                                        <li class="active">전체</li>
+                                        <li>제목</li>
+                                        <li>본문</li>
+                                        <li>첨부파일</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="search"><input type="text" placeholder="검색어 입력"/></div>
+                    </article>
+                    <div class="sub-title"><h2>등록일 검색</h2></div>
+                    <article class="pull-down aside full-width">
+                        <ul class="menu">
+                            <li>
+                                <input id="range" type="checkbox"/>
+                                <label for="range">전체</label>
+                                <div class="active-init apply-close">
+                                    <ul class="submenu">
+                                        <li class="active">전체</li>
+                                        <li>금일</li>
+                                        <li>1주</li>
+                                        <li>1개월</li>
+                                        <li class="date-input-group">
+                                            <div>직접입력</div>
+                                            <div><input type="text" class="date"/></div>
+                                            <div><input type="text" class="date"/></div>
+                                        </li>
+                                        <li class="btn"><button class="btn-apply btnPullDownapply">적용</button></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <div><button class="btn-black">검색</button></div>
+            </article>
+            </form>
+            <!-- 조건검색  -->
+            <!-- 최신인기자료 시작 -->
+            <article class="fav-data-wrap mt50 pc-only">
+                <div class="title-wrap">
+                    <div class="title"><h1>최신 인기 자료</h1></div>
+                    <div class="data-nav">
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <div class="num">01</div>
+                            <div class="contents">
+                                <div class="subject"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                                <div class="write-date"><span class="box-black">해명자료</span>2019.05.23</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="num">02</div>
+                            <div class="contents">
+                                <div class="subject"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                                <div class="write-date"><span class="box-black">해명자료</span>2019.05.23</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="num">03</div>
+                            <div class="contents">
+                                <div class="subject"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                                <div class="write-date"><span class="box-black">해명자료</span>2019.05.23</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="num">04</div>
+                            <div class="contents">
+                                <div class="subject"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                                <div class="write-date"><span class="box-black">해명자료</span>2019.05.23</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="num">05</div>
+                            <div class="contents">
+                                <div class="subject"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                                <div class="write-date"><span class="box-black">해명자료</span>2019.05.23</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <!-- 최신인기자료 끝 -->
+        </aside>
+        <!-- 사이드 영역 끝 -->
+    </section>
+</section>
+<!-- 컨텐츠 영역 끝 -->
+
+<!-- 푸터 시작 -->
+<div class="footer-wrap">
+    <div class="footer-container">
+        <div class="info-wrap">
+            <div class="footer-bi"><img src="../images/footer-logo.png" alt="서울시보도지원시스템"/></div>
+            <div class="info">
+                <address>서울특별시청 04524 서울특별시 중구 세종대로 110 2층 언론담당관</address>
+                <p>담당자 : 언론담당관 김인숙</p>
+                <p>전화번호: 02-120 / 02-2133-6233</p>
+                <p>이메일: iskin@seoul.go.kr</p>
+            </div>
+        </div>
+        <div class="copyright">© Seoul Metropolitan Government all rights reserved</div>
+    </div>
+</div>
+<!-- 푸터 끝 -->
+</body>
+<!-- 파일첨부 팝업 시작 -->
+<section id="file" class="popup-container hidden">
+    <div class="popup-head">
+        <div class="file_close popup-close"></div>
+        <div class="file-title"><h1>첨부파일</h1><span class="num">4</span></div>
+    </div>
+    <div class="popup-body">
+        <div class="file">
+            <ul>
+                <li>
+                    <div class="clip"></div>
+                    <div class="contents">
+                        <div class="subject">[서울시] 20190711한성백제박물관, 주말 문화유산 탐방 체험 교육 운영자료.hwp</div>
+                        <div class="btn"><button class="btn-preview">미리보기</button></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="clip"></div>
+                    <div class="contents">
+                        <div class="subject">[서울시] 20190711한성백제박물관, 주말 문화유산 탐방 체험 교육 운영자료.hwp</div>
+                        <div class="btn"><button class="btn-preview">미리보기</button></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="clip"></div>
+                    <div class="contents">
+                        <div class="subject">[서울시] 20190711한성백제박물관, 주말 문화유산 탐방 체험 교육 운영자료.hwp</div>
+                        <div class="btn"><button class="btn-preview">미리보기</button></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- 파일첨부 팝업 끝 -->
+<script>
+    var depths1 = 1;
+    var depths2 = 8;
+    $(document).ready(function() {
+        //팝업 스크립트
+        $('#file').popup({
+            pagecontainer: '#page',
+            escape: false,
+            blur: false,
+            closebutton: false
+        });
+    });
+</script>
+</html>

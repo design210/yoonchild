@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>서울시 보도지원시스템</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+    <script src="./js/jquery.popupoverlay.js"></script>
+    <script src="./js/jquery.twbsPagination.min.js"></script>
+
+    <link href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- 상단 UI 영역 시작 -->
+<form id="" name="" action=""  onsubmit="return false">
+<section class="ui-wrap">
+    <div class="ui-container">
+        <!-- 모바일 햄버거 메뉴 시작 -->
+        <div class="trigger_wrap mo-only">
+            <a class="menu-trigger" href="#">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+            </a>
+        </div>
+        <!-- 모바일 햄버거 메뉴 끝 -->
+        <!-- bi 시작 -->
+        <div class="bi"><img src="./images/logo.png" alt="서울시보도지원시스템"/></div>
+        <!-- bi 끝 -->
+        <!-- 모바일 통합 검색 버튼 시작 -->
+        <div class="mo-only search-open active-init"><img src="./images/icon-search.png" alt="검색창 열기"/>닫기</div>
+        <!-- 모바일 통합 검색 버튼  끝 -->
+        <div class="menu-common">
+            <!-- 모바일 메뉴 닫기 버튼 시작 -->
+            <div class="nav-close mo-only"></div>
+            <!-- 모바일 메뉴 닫기 버튼 끝 -->
+            <nav>
+                <div>
+                    <div class="mo-only home">홈</div>
+                    <div class="down-has active-init">보도지원</div>
+                    <div class="depths2">
+                        <div class="active-init">
+                            <ul>
+                                <li>보도자료</li>
+                                <li>기자설명회</li>
+                                <li>시장동정</li>
+                                <li>해명자료</li>
+                                <li>설명자료</li>
+                                <li>사진자료</li>
+                                <li>영상자료</li>
+                                <li>보도참고자료</li>
+                                <li>자치구보도자료</li>
+                            </ul>
+                            <ul class="pc-only">
+                                <li class="calendar"><button class="btn-calendar">보도일정안내</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mo-only press-calendar">보도일정안내</div>
+                <div class="down-none">공지사항</div>
+            </nav>
+            <article>
+                <div class="pc-only">
+                    <div class="total-search">
+                        <div><input type="text" placeholder="통합검색"/></div>
+                        <div class="btn-search-main"><button></button></div>
+                    </div>
+                </div>
+                <div class="name"><span>출입기자</span> <span class="pc-only">|</span> 홍길동<span class="mo-only arrow"><img src="./images/name-arrow.png" alt=""/></span></div>
+                <div class="btn-logout"><button>로그아웃</button></div>
+            </article>
+        </div>
+    </div>
+    <!-- 모바일용 통합 검색 시작 -->
+    <article class="mo-only">
+        <div class="total-search-wrap">
+            <div class="total-search">
+                <div class="input"><input type="text" placeholder="통합검색"/></div>
+                <div class="btn-search-main"><button></button></div>
+            </div>
+        </div>
+    </article>
+    <!-- 모바일용 통합 검색 끝 -->
+</section>
+</form>
+<!-- 상단 UI 영역 끝 -->
+<!-- PC 간격 조정용 -->
+<div class="pc-only"><div class="depths2-space"></div></div>
+<!-- 컨텐츠 영역 시작 -->
+<section class="contents-wrap-gray">
+    <div class="container main-top">
+        <!-- 오늘의 업데이트 시작 -->
+        <article class="today-update mo-shadow">
+            <div class="title"><h1>최신 업데이트</h1></div>
+            <div class="list">
+                <div class="inside"><div class="mo-only sub-title"><h2>최신 업데이트</h2></div></div>
+                <ul>
+                    <li>
+                        <div class="title">보도자료</div>
+                        <div class="num">11<span>건</span></div>
+                    </li>
+                    <li>
+                        <div class="title">해명자료</div>
+                        <div class="num">11<span>건</span></div>
+                    </li>
+                    <li>
+                        <div class="title">설명자료</div>
+                        <div class="num">11<span>건</span></div>
+                    </li>
+                    <li>
+                        <div class="title">사진자료</div>
+                        <div class="num">11<span>건</span></div>
+                    </li>
+                    <li>
+                        <div class="title">영상자료</div>
+                        <div class="num">11<span>건</span></div>
+                    </li>
+                    <li>
+                        <div class="title">보도참고자료</div>
+                        <div class="num">11<span>건</span></div>
+                    </li>
+                    <li>
+                        <div class="title">자치구보도자료</div>
+                        <div class="num">11<span>건</span></div>
+                    </li>
+                    <li>
+                        <div class="title">투자출현기관자료</div>
+                        <div class="num">11<span>건</span></div>
+                    </li>
+                    <li>
+                        <div class="title">자료실</div>
+                        <div class="num">11<span>건</span></div>
+                    </li>
+                </ul>
+                <div class="mo-only close">접기<span><img src="./images/arrow-blue-up.png" alt="접기"></span></div>
+            </div>
+        </article>
+        <!-- 오늘의 업데이트 끝 -->
+        <!-- 오늘의 보도자료 시작 -->
+        <article class="today-press">
+            <div class="title">
+                <div><h1>최신 등록자료</h1><span class="title-num">32</span></div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div class="title"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                        <div class="write-date"><span class="box-black">보도자료</span>2019.05.23</div>
+                    </li>
+                    <li>
+                        <div class="title"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                        <div class="write-date"><span class="box-black">기자설명회</span>2019.05.23</div>
+                    </li>
+                    <li>
+                        <div class="title"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                        <div class="write-date"><span class="box-black">보도자료</span>2019.05.23</div>
+                    </li>
+                    <li>
+                        <div class="title"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                        <div class="write-date"><span class="box-black">해명자료</span>2019.05.23</div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 페이징 시작 -->
+            <div class="page-wrap">
+                <div id="pagination" class="pagination-wrap"></div>
+            </div>
+            <!-- 페이징 끝 -->
+        </article>
+        <!-- 오늘의 보도자료 끝 -->
+        <!-- 오늘의 사진자료 시작 -->
+        <article class="today-photo">
+            <div class="title">
+                <div><h1>최신 사진자료</h1><span class="title-num">32</span></div>
+                <div class="more">More</div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div class="photo"><img src="./images/photo1.jpg" alt="광명문, 제자리로 돌아와"/></div>
+                        <div class="content-wrap">
+                            <div class="title">서울시, 동매문 DDP 패션몰에 반값점 오픈 중입니다.</div>
+                            <div class="write-date">2019.06.07</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo"><img src="./images/photo1.jpg" alt="광명문, 제자리로 돌아와"/></div>
+                        <div class="content-wrap">
+                            <div class="title">서울시, 동매문 DDP 패션몰에 반값점 오픈 중입니다.</div>
+                            <div class="write-date">2019.06.07</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 페이징 시작 -->
+            <div class="page-wrap">
+                <div id="pagination2" class="pagination-wrap"></div>
+            </div>
+            <!-- 페이징 끝 -->
+        </article>
+        <!-- 오늘의 사진자료 끝 -->
+    </div>
+</section>
+<!-- 하단 컨텐츠 시작 -->
+<section class="container main-middle">
+    <section class="data-wrap">
+        <!-- 보도자료, pool기사, 자치구보도자료, 영상자료 시작 -->
+        <article class="data-main mt40">
+            <div class="nav active-init">
+                <ul>
+                    <li class="active">보도자료</li>
+                    <li>해명자료</li>
+                    <li>설명자료</li>
+                    <li>영상자료</li>
+                    <li>보도참고자료</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div>
+                            <div class="title"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                            <div class="write-date">2019.06.08</div>
+                        </div>
+                        <div class="detail"><img src="./images/list-arrow.png" alt="자세히 보기"/></div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="title"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                            <div class="write-date">2019.06.08</div>
+                        </div>
+                        <div class="detail"><img src="./images/list-arrow.png" alt="자세히 보기"/></div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="title"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                            <div class="write-date">2019.06.08</div>
+                        </div>
+                        <div class="detail"><img src="./images/list-arrow.png" alt="자세히 보기"/></div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="title"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                            <div class="write-date">2019.06.08</div>
+                        </div>
+                        <div class="detail"><img src="./images/list-arrow.png" alt="자세히 보기"/></div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="title"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                            <div class="write-date">2019.06.08</div>
+                        </div>
+                        <div class="detail"><img src="./images/list-arrow.png" alt="자세히 보기"/></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt20"><button class="btn-basic">전체보기</button></div>
+        </article>
+        <!-- 보도자료, pool기사, 자치구보도자료, 영상자료 끝 -->
+        <!-- 정례브리핑, 해-설명자료, 시장동정 시작 -->
+        <article class="data-main mt40">
+            <div class="nav active-init">
+                <ul>
+                    <li class="active">자치구보도자료</li>
+                    <li>투자출현기관자료</li>
+                    <li>자료실</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div>
+                            <div class="title"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                            <div class="write-date">2019.06.08</div>
+                        </div>
+                        <div class="detail"><img src="./images/list-arrow.png" alt="자세히 보기"/></div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="title"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                            <div class="write-date">2019.06.08</div>
+                        </div>
+                        <div class="detail"><img src="./images/list-arrow.png" alt="자세히 보기"/></div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="title"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                            <div class="write-date">2019.06.08</div>
+                        </div>
+                        <div class="detail"><img src="./images/list-arrow.png" alt="자세히 보기"/></div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="title"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                            <div class="write-date">2019.06.08</div>
+                        </div>
+                        <div class="detail"><img src="./images/list-arrow.png" alt="자세히 보기"/></div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="title"><a href="javascript:void(0)">LPG연료 사용제한 완화, 관계부처 긴밀 협의로 추진</a></div>
+                            <div class="write-date">2019.06.08</div>
+                        </div>
+                        <div class="detail"><img src="./images/list-arrow.png" alt="자세히 보기"/></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt20"><button class="btn-basic">전체보기</button></div>
+        </article>
+        <!-- 정례브리핑, 해-설명자료, 시장동정 끝 -->
+    </section>
+    <section class="notice-wrap">
+        <!-- 배너 시작 -->
+        <div class="main-banner mt40"><a href="javascript:void(0)"><img src="./images/banner.gif" alt="보도 일정 안내 바로가기"/></a></div>
+        <!-- 배너 끝 -->
+        <!-- 공지사항 시작 -->
+        <article class="notice mt30">
+            <div class="title">
+                <div><h1>공지사항</h1></div>
+                <div class="more">More</div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div class="title"><span>[긴급]</span><a href="javascript:void(0)">시스템 점검에 따른 작업 공지 안내</a></div>
+                        <div class="write-date">2019.05.23</div>
+                    </li>
+                    <li>
+                        <div class="title"><a href="javascript:void(0)">시스템 점검에 따른 작업 공지 안내</a></div>
+                        <div class="write-date">2019.05.23</div>
+                    </li>
+                    <li>
+                        <div class="title"><a href="javascript:void(0)">시스템 점검에 따른 작업 공지 안내</a></div>
+                        <div class="write-date">2019.05.23</div>
+                    </li>
+                    <li>
+                        <div class="title"><a href="javascript:void(0)">시스템 점검에 따른 작업 공지 안내</a></div>
+                        <div class="write-date">2019.05.23</div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <!-- 공지사항 끝 -->
+    </section>
+</section>
+<!-- 하단 컨텐츠 끝 -->
+<!-- 컨텐츠 영역 끝 -->
+
+<!-- 푸터 시작 -->
+<div class="footer-wrap">
+    <div class="footer-container">
+        <div class="info-wrap">
+            <div class="footer-bi"><img src="./images/footer-logo.png" alt="서울시보도지원시스템"/></div>
+            <div class="info">
+                <address>서울특별시청 04524 서울특별시 중구 세종대로 110 2층 언론담당관</address>
+                <p>담당자 : 언론담당관 김인숙</p>
+                <p>전화번호: 02-120 / 02-2133-6233</p>
+                <p>이메일: iskin@seoul.go.kr</p>
+            </div>
+        </div>
+        <div class="copyright">© Seoul Metropolitan Government all rights reserved</div>
+    </div>
+</div>
+<!-- 푸터 끝 -->
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		initTwbsPagination('pagination');
+		initTwbsPagination('pagination2');
+	});
+	</script>
+
+
+</body>
+</html>

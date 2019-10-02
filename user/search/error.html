@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>서울시 보도지원시스템</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+    <script src="../js/jquery.popupoverlay.js"></script>
+    <script src="../js/jquery.twbsPagination.min.js"></script>
+
+    <link href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- 상단 UI 영역 시작 -->
+<form id="" name="" action=""  onsubmit="return false">
+<section class="ui-wrap">
+    <div class="ui-container">
+        <!-- bi 시작 -->
+        <div class="bi pc-only"><img src="../images/logo.png" alt="서울시보도지원시스템"/></div>
+        <div class="search-bi mo-only"><img src="../images/logo-mobile.png" alt="서울시보도지원시스템"/></div>
+        <!-- bi 끝 -->
+        <!-- 통합검색 시작 -->
+        <div class="total-search full-width">
+            <div><input type="text" placeholder="통합검색"/></div>
+            <div class="btn-search-main"><button></button></div>
+        </div>
+        <div class="detail-search"><button class="btn-detail-search" type="button">상세검색</button></div>
+        <!-- 통합검색 끝 -->
+    </div>
+    <!-- 상세검색 풀다운 시작 -->
+    <article class="pull-down">
+        <ul class="menu">
+            <li>
+                <input id="range" type="checkbox"/>
+                <label for="range">검색범위</label>
+                <div class="active-init auto-close">
+                    <ul class="submenu search-range">
+                        <li class="active">전체</li>
+                        <li>제목</li>
+                        <li>본문</li>
+                        <li>첨부파일</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <input id="term" type="checkbox"/>
+                <label for="term">기간</label>
+                <div class="active-init apply-close">
+                    <ul class="submenu day-range">
+                        <li class="active">전체</li>
+                        <li>1일</li>
+                        <li>1주</li>
+                        <li>1개월</li>
+                        <li>6개월</li>
+                        <li>1년</li>
+                        <li class="date-input-group">
+                            <div>직접입력</div>
+                            <div><input type="text" class="date"/></div>
+                            <div><input type="text" class="date"/></div>
+                        </li>
+                        <li class="btn"><button class="btn-apply">적용</button></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <input id="department" type="checkbox"/>
+                <label for="department">담당부서</label>
+                <div class="active-init apply-close">
+                    <ul class="submenu department-range">
+                        <li class="active">전체</li>
+                        <li class="department-search">
+                            <div class="title">부서검색</div>
+                            <div><input type="text"></div>
+                        </li>
+                        <li class="history">본청 &gt; 대변인 &gt; <span>언론담담관</span></li>
+                        <li class="btn"><button class="btn-apply">적용</button></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <div class="pull-down-close"></div>
+    </article>
+    <!-- 상세검색 풀다운 끝 -->
+</section>
+<!-- 검색 카테고리 시작 -->
+<section class="search-categories">
+    <div class="active-init-categories">
+        <ul class="mo-align">
+            <li class="active">통합검색</li>
+            <li>보도자료</li>
+            <li>기자설명회</li>
+            <li>시장동정</li>
+        </ul>
+        <ul class="mo-toggle mo-align">
+            <li>해명자료</li>
+            <li>설명자료</li>
+            <li>사진자료</li>
+            <li>영상자료</li>
+        </ul>
+        <ul class="mo-toggle">
+            <li>보도참고자료</li>
+            <li>자치구보도자료</li>
+        </ul>
+        <!-- 모바일용 접기 버튼 시작-->
+        <div class="mo-toggle">
+            <div class="close-categories mo-only">닫기<span><img src="../images/arrow-blue-up.png" alt="닫기"></span></div>
+        </div>
+        <!-- 모바일용 접기 버튼 끝-->
+    </div>
+    <!-- 모바일용 더보기 버튼 시작-->
+    <div class="mo-only">
+        <div class="more-categories"></div>
+    </div>
+    <!-- 모바일용 더보기 버튼 끝-->
+</section>
+<!-- 검색 카테고리 끝 -->
+</form>
+<!-- 상단 UI 영역 끝 -->
+<div class="depths2-space pc-only"></div>
+<!-- 컨텐츠 영역 시작 -->
+<section class="sub-container">
+    <!-- 검색결과 리스트 시작 -->
+    <article class="search-result">
+        <div class="total-search-error-wrap">
+            <div class="info">
+                <p><span class="result">ㅣ만엊ㄴ딸댜ㅓㅂㅌ</span>에 대한</p>
+                <p><span>검색결과가 없습니다.</span></p>
+            </div>
+            <div class="img"><img src="../images/error.gif" alt="검색결과가 없습니다."/></div>
+        </div>
+    </article>
+</section>
+
+<!-- 푸터 시작 -->
+<div class="footer-wrap">
+    <div class="footer-container">
+        <div class="info-wrap">
+            <div class="footer-bi"><img src="../images/footer-logo.png" alt="서울시보도지원시스템"/></div>
+            <div class="info">
+                <address>서울특별시청 04524 서울특별시 중구 세종대로 110 2층 언론담당관</address>
+                <p>담당자 : 언론담당관 김인숙</p>
+                <p>전화번호: 02-120 / 02-2133-6233</p>
+                <p>이메일: iskin@seoul.go.kr</p>
+            </div>
+        </div>
+        <div class="copyright">© Seoul Metropolitan Government all rights reserved</div>
+    </div>
+</div>
+<!-- 푸터 끝 -->
+</body>
+</html>

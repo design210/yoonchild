@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>서울시 보도지원시스템</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+    <script src="../js/jquery.popupoverlay.js"></script>
+    <script src="../js/jquery.twbsPagination.min.js"></script>
+
+    <link href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- 상단 UI 영역 시작 -->
+<form id="" name="" action=""  onsubmit="return false">
+    <section class="ui-wrap">
+        <div class="ui-container">
+            <!-- 모바일 햄버거 메뉴 시작 -->
+            <div class="trigger_wrap mo-only">
+                <a class="menu-trigger" href="#">
+                    <span> </span>
+                    <span> </span>
+                    <span> </span>
+                </a>
+            </div>
+            <!-- 모바일 햄버거 메뉴 끝 -->
+            <!-- bi 시작 -->
+            <div class="bi"><img src="../images/logo.png" alt="서울시보도지원시스템"/></div>
+            <!-- bi 끝 -->
+            <!-- 모바일 통합 검색 버튼 시작 -->
+            <div class="mo-only search-open active-init"><img src="../images/icon-search.png" alt="검색창 열기"/>닫기</div>
+            <!-- 모바일 통합 검색 버튼  끝 -->
+            <div class="menu-common">
+                <!-- 모바일 메뉴 닫기 버튼 시작 -->
+                <div class="nav-close mo-only"></div>
+                <!-- 모바일 메뉴 닫기 버튼 끝 -->
+                <nav>
+                    <div>
+                        <div class="mo-only home">홈</div>
+                        <div class="down-has active-init">보도지원</div>
+                        <div class="depths2">
+                            <div class="active-init">
+                                <ul>
+                                    <li>보도자료</li>
+                                    <li>기자설명회</li>
+                                    <li>시장동정</li>
+                                    <li>해명자료</li>
+                                    <li>설명자료</li>
+                                    <li>사진자료</li>
+                                    <li>영상자료</li>
+                                    <li>보도참고자료</li>
+                                    <li>자치구보도자료</li>
+                                </ul>
+                                <ul class="pc-only">
+                                    <li class="calendar"><button class="btn-calendar">보도계획안내</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mo-only press-calendar">보도계획안내</div>
+                    <div class="down-none">공지사항</div>
+                </nav>
+                <article>
+                    <div class="pc-only">
+                        <div class="total-search">
+                            <div><input type="text" placeholder="통합검색"/></div>
+                            <div class="btn-search-main"><button></button></div>
+                        </div>
+                    </div>
+                    <div class="name"><span>출입기자</span> <span class="pc-only">|</span> 홍길동<span class="mo-only arrow"><img src="./images/name-arrow.png" alt=""/></span></div>
+                    <div class="btn-logout"><button>로그아웃</button></div>
+                </article>
+            </div>
+        </div>
+        <!-- 모바일용 통합 검색 시작 -->
+        <article class="mo-only">
+            <div class="total-search-wrap">
+                <div class="total-search">
+                    <div class="input"><input type="text" placeholder="통합검색"/></div>
+                    <div class="btn-search-main"><button></button></div>
+                </div>
+            </div>
+        </article>
+        <!-- 모바일용 통합 검색 끝 -->
+        <!-- 보도지원 모바일 메뉴 시작 -->
+        <article class="mo-press-menu mo-only">
+            <div class="title"><h1 class="active-init">보도자료</h1></div>
+            <div class="sub-menu">
+                <ul>
+                    <li>기자설명회</li>
+                    <li>시장동정</li>
+                    <li>해명자료</li>
+                    <li>설명자료</li>
+                    <li>사진자료</li>
+                    <li>영상자료</li>
+                    <li>보도참고자료</li>
+                    <li>자치구보도자료</li>
+                    <li>보도계획안내</li>
+                </ul>
+            </div>
+        </article>
+        <!-- 보도지원 모바일 메뉴 끝 -->
+    </section>
+</form>
+<!-- 상단 UI 영역 끝 -->
+<!-- PC 간격 조정용 -->
+<div class="pc-only"><div class="depths2-space"></div></div>
+<!-- 컨텐츠 영역 시작 -->
+<section class="sub-container">
+    <!-- 뉴스 읽기 영역 시작 -->
+    <article class="press-wrap aside-none">
+        <div class="title">
+            <div>
+                <span class="history">보도지원</span>
+                <span>보도자료</span>
+            </div>
+            <div class="mo-only"><button class="btn-mo-list">목록</button></div>
+        </div>
+        <!-- 내용 시작 -->
+        <div class="read-title"><h1>[19.06.27(목) 조간] 한성백제박물관, 주말 문화유산 탐방 체험 교육 운영</h1></div>
+        <div class="read-date">2019-03-28  09:00:03</div>
+        <section class="table-wrap pc-only single">
+            <article>
+                <div class="title">보도 가능 시점</div>
+                <div class="content">2019-06-26  11:15  이후</div>
+            </article>
+        </section>
+        <section class="table-wrap">
+            <article>
+                <div class="title">담당부서</div>
+                <div class="content">한성백제박물관 교육홍보과</div>
+            </article>
+            <article>
+                <div class="title">조회수</div>
+                <div class="content">154</div>
+            </article>
+        </section>
+        <section class="table-wrap single">
+            <article>
+                <div class="title">첨부파일</div>
+                <div class="content">
+                    <div class="subject">한성백제박물관, 주말 문화유산 탐방 체험 교육 운영.hwp</div>
+                    <div class="file">
+                        <div class="size">(195kb, 다운로드:65회)</div>
+                        <div class="btn"><button class="btn-preview">미리보기</button></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="read-contents">
+            <div>
+                <p>- 3. 31.(일) ~ 6.9.(일) 가족 대상 프로그램 운영</p>
+                <p>- “가족과 함께하는 한성백제 워킹투어” 를 주제로 박물관, 몽촌토성, 풍납동 토성을 살펴보는 체험 마련</p>
+                <p>※ 사제한 사항은 붙임문서를 참고 하세요.</p>
+            </div>
+        </section>
+        <div class="pc-only list-back mt10"><button class="btn-basic">목록</button></div>
+        <!-- 내용 끝 -->
+    </article>
+    <!-- 뉴스 읽기 영역 끝 -->
+</section>
+<!-- 컨텐츠 영역 끝 -->
+
+<!-- 푸터 시작 -->
+<div class="footer-wrap">
+    <div class="footer-container">
+        <div class="info-wrap">
+            <div class="footer-bi"><img src="../images/footer-logo.png" alt="서울시보도지원시스템"/></div>
+            <div class="info">
+                <address>서울특별시청 04524 서울특별시 중구 세종대로 110 2층 언론담당관</address>
+                <p>담당자 : 언론담당관 김인숙</p>
+                <p>전화번호: 02-120 / 02-2133-6233</p>
+                <p>이메일: iskin@seoul.go.kr</p>
+            </div>
+        </div>
+        <div class="copyright">© Seoul Metropolitan Government all rights reserved</div>
+    </div>
+</div>
+<!-- 푸터 끝 -->
+</body>
+<script>
+    var depths1 = 1;
+    var depths2 = 1;
+</script>
+</html>

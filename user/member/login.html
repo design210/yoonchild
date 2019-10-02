@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>서울시 보도지원시스템</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+    <script src="../js/jquery.popupoverlay.js"></script>
+    <script src="../js/jquery.twbsPagination.min.js"></script>
+
+    <link href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- 상단 UI 영역 시작 -->
+<section class="ui-wrap">
+    <div class="ui-container">
+        <!-- 모바일 햄버거 메뉴 시작 -->
+        <div class="trigger_wrap mo-only">
+            <a class="menu-trigger" href="#">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+            </a>
+        </div>
+        <!-- 모바일 햄버거 메뉴 끝 -->
+        <!-- bi 시작 -->
+        <div class="bi"><img src="../images/logo.png" alt="서울시보도지원시스템"/></div>
+        <!-- bi 끝 -->
+        <!-- 모바일 통합 검색 버튼 시작 -->
+        <div class="mo-only search-open"></div>
+        <!-- 모바일 통합 검색 버튼  끝 -->
+        <div class="menu-common">
+            <div class="nav-close login mo-only"></div>
+            <nav>
+                <div>
+                    <div class="mo-only home">홈</div>
+                    <div class="down-has active-init">보도지원</div>
+                    <div class="depths2">
+                        <div class="active-init">
+                            <ul>
+                                <li>보도자료</li>
+                                <li>기자설명회</li>
+                                <li>시장동정</li>
+                                <li>해명자료</li>
+                                <li>설명자료</li>
+                                <li>사진자료</li>
+                                <li>영상자료</li>
+                                <li>보도참고자료</li>
+                                <li>자치구보도자료</li>
+                            </ul>
+                            <ul class="pc-only">
+                                <li class="calendar"><button class="btn-calendar">보도일정안내</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mo-only press-calendar">보도일정안내</div>
+                <div class="down-none">공지사항</div>
+            </nav>
+            <!-- 모바일용 로그인 버튼 영역 시작-->
+            <article class="mo-only">
+                <div class="btn-login"><button>로그인</button></div>
+            </article>
+            <!-- 모바일용 로그인 버튼 영역 끝-->
+        </div>
+    </div>
+</section>
+<!-- 상단 UI 영역 끝 -->
+<!-- PC 간격 조정용 -->
+<div class="pc-only"><div class="depths2-space"></div></div>
+<!-- 컨텐츠 영역 시작 -->
+<form id="" name="" action=""  onsubmit="return false">
+<section class="sub-container">
+    <article class="login-wrap">
+        <div class="title"><h1>로그인</h1></div>
+        <article class="login-inside-wrap">
+            <!-- 에러 활성은 class에 error를 추가해주세요 -->
+            <div class="id mt60 error"><input type="text" placeholder="아이디"></div>
+            <!-- 에러 활성은 class에 error를 추가해주세요 -->
+            <div class="warning error">아이디를 입력하세요.</div>
+            <!-- 에러 활성은(인풋하단 레드라인) class에 error를 추가해주세요 -->
+            <div class="password mt10">
+                <input type="password" placeholder="비밀번호">
+                <i class="pw-show active-init"></i>
+            </div>
+            <!-- 에러 활성은(인풋하단 레드라인) class에 error를 추가해주세요 -->
+            <div class="warning">비밀번호를 확인해주세요.</div>
+            <div class="save-info mt20">
+                <div class="check-style">
+                    <span><input type="checkbox" id="id-save" checked><label for="id-save">아이디 저장</label></span>
+                    <span class="ml50"><input type="checkbox" id="auto-login"><label for="auto-login">자동 로그인</label></span>
+                </div>
+                <div class="search-pw">
+                    <button class="password-search_open">비밀번호 찾기</button>
+                </div>
+            </div>
+            <!-- 에러 활성은 class에 error를 추가해주세요 -->
+            <div class="not-info">회원정보를 찾을 수 없습니다.</div>
+            <div class="mt25"><button class="login-btn" data-link="http://www.naver.com">로그인</button></div>
+            <div class="info mt20">* 아이디 분실 시, 관리자에게 직접 문의하세요. (02-1234-5678)</div>
+        </article>
+    </article>
+</section>
+</form>
+<!-- 컨텐츠 영역 끝 -->
+</body>
+<!-- 비밀번호 찾기 & 재설정 시작 -->
+<section id="password-search" class="popup-container">
+    <!-- 비밀번호 찾기 시작 -->
+    <section class="password-search">
+        <div class="popup-head">
+            <div class="password-search_close popup-close"></div>
+            <div><h1>비밀번호 찾기</h1></div>
+        </div>
+        <div class="popup-body">
+            <div class="check">본인확인 후 비밀번호 재설정으로 이동합니다.</div>
+            <div class="id mt20"><input type="text" placeholder="아이디"></div>
+            <div class="name mt20"><input type="text" placeholder="이름"></div>
+            <div class="hp mt20">
+                <div><input type="text" placeholder="휴대폰 번호(’-’제외)"></div>
+                <div class="num-send"><button>인증번호 전송</button></div>
+            </div>
+            <article class="num-wrap">
+                <div class="num-send-re mt20">
+                    <div>인증번호를 전송하였습니다.</div>
+                    <div><button>재전송 요청</button></div>
+                </div>
+                <div class="number mt20"><input type="text" placeholder="인증번호 입력"></div>
+                <!-- 에러 활성은 class에 error 추가해주세요 -->
+                <div class="mt10 warning">회원정보가 일치하지 않습니다.</div>
+            </article>
+        </div>
+        <div class="popup-footer">
+            <button class="btn-next" data-display="password-reset">다음</button>
+        </div>
+    </section>
+    <!-- 비밀번호 찾기 끝 -->
+    <!-- 비밀번호 재설정 시작 -->
+    <section class="password-reset hidden">
+        <div class="popup-head">
+            <div class="password-search_close popup-close"></div>
+            <div><h1>비밀번호 재설정</h1></div>
+        </div>
+        <div class="popup-body">
+            <div class="sub-title"><h2>새 비밀번호를 입력해주세요.</h2></div>
+            <div class="check mt10">
+                <p>9~15자리 (영문자, 숫자, 특수문자 중 3가지이상 문자 조합)</p>
+                <p>특수문자는 ~!@#$%^&*()=_.,| 만 사용가능</p>
+            </div>
+            <!-- 에러 활성은(인풋하단 레드라인) class에 error를 추가해주세요 -->
+            <div class="password mt30">
+                <input type="password" placeholder="비밀번호">
+                <i class="pw-show active-init"></i>
+            </div>
+            <!-- 에러 활성은(인풋하단 레드라인) class에 error를 추가해주세요 -->
+            <div class="password mt20 error">
+                <input type="password" placeholder="비밀번호">
+                <i class="pw-show active-init"></i>
+            </div>
+            <!-- 에러 활성은 class에 error 추가해주세요 -->
+            <div class="mt10 mb80 warning error">잘 못된 형식입니다.</div>
+        </div>
+        <div class="popup-footer">
+            <button class="btn-next" data-display="password-reset-complete">확인</button>
+        </div>
+    </section>
+    <!-- 비밀번호 재설정 끝 -->
+    <!-- 비밀번호 재설정 완료 시작 -->
+    <section class="password-reset-complete hidden">
+        <div class="popup-head">
+            <div class="password-search_close popup-close"></div>
+            <div><h1>비밀번호 재설정 완료</h1></div>
+        </div>
+        <div class="popup-body">
+            <div class="info">
+                <p>비밀번호가 변경 완료되었습니다.</p>
+                <p>로그인해주시기 바랍니다.</p>
+            </div>
+        </div>
+        <div class="popup-footer">
+            <button class="btn-check password-search_close active">확인</button>
+        </div>
+    </section>
+    <!-- 비밀번호 재설정 끝 -->
+</section>
+<!-- 비밀번호 찾기 & 재설정 끝 -->
+
+<script>
+    $(document).ready(function() {
+        //팝업 스크립트
+        $('#password-search').popup({
+            pagecontainer: '#page',
+            escape: false,
+            blur: false,
+            closebutton: false
+        });
+        //팝업 스크립트
+        $('#password-change').popup({
+            pagecontainer: '#page',
+            escape: false,
+            blur: false,
+            closebutton: false
+        });
+
+		$('#password-search .popup-footer .btn-next').click(function() {
+			$('#password-search section').addClass('hidden')
+			$('#password-search section.'+$(this).data('display')).removeClass('hidden')
+		});
+
+		//비밀번호 찾기 다음단계 넘기기
+		$('.popup-body .num-send button').click(function() {
+			$('.popup-body .num-send,.popup-body .num-wrap,.popup-footer .btn-next').addClass('active');
+		});
+    });
+</script>
+</html>
